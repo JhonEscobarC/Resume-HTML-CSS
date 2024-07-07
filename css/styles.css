@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+header{
+    background: #1f1f1f;
+    padding: 10px 50px;
+}
+
+.image-logo img{
+    width: 100%;
+}
+
+#image-logo{
+    width: 50px;
+}
+
+#image-logo img{
+    border-radius: 100%;
+    border: 2px solid #fff;
+}
+
+/* Main */
+
+#main{
+    position: relative;
+}
+
+#main .image-wallpaper img{
+    display: inline-block;
+    width: 100%;
+}
+#main .main-content{
+    position: absolute;
+    top: 50%;
+    /*Ese transform se usa para centrar bien ya que tiene un fallo en el espacio*/
+    transform: translateY(-50%);
+    left: 0;
+    display: flex;
+    width: 100%;
+    color: white;
+    padding: 0 50px;
+}
+
+#main .main-content .photo{
+    width: 200px;
+}
+
+#main .main-content .photo img{
+    border-radius: 100%;
+    width: 200px;
+    width: 100%;
+    height: 100%;
+}
+
+#main .main-content .information{
+    margin-left: 20px;
+    /*negrilla*/
+    font-weight: bold;
+    width: calc(100% - 200px);
+}
+
+#main .main-content .information span{
+    display: inline-block;
+    margin-bottom: 70px;
+}
+
+main{
+    padding: 100px;
+}
+
+main .social-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    list-style: none;
+}
+
+main .social-icons .social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+main .social-icons li{
+    margin-left: 8px;
+}
+
+main .social-icons img{
+    width: 100px;
+    height: 100px;
+}
